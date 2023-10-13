@@ -1,0 +1,680 @@
+/* Estilos gloabales */
+
+html{
+    font-size: 62.5%; /*Transforma el rem de 16px a 10px*/
+}
+
+/*  Reset */
+*{
+    font-size: 62.5%;
+    margin: 0;
+    padding: 0;
+    text-decoration: none; 
+}
+
+/* Header */
+
+header{
+    background-color: rgb(218, 4, 128);
+    width: auto;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    flex-direction: column;
+}
+
+header h1{
+    text-align: center;
+    color: rgb(255,255,255);
+    font-size: 50px;
+    font-family: 'Caveat Brush', cursive;
+    margin: 10px;
+}
+
+header nav ul{
+    text-align: center;
+    align-items: center;
+}
+
+header nav ul li{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+    display:grid;
+    font-weight: bold;
+    text-align: center;
+    align-items: center;
+    font-family: 'Patrick Hand', cursive;
+}
+
+.logo{
+    position:static;
+    left: 50%;
+    width: 120px;
+    height: 80px;
+}
+
+/* Main Index*/
+
+.contenedor_index1{
+    background-color: rgb(205,229,228);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.contenedor_index1 div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor_index1{
+    background-color: rgb(205,229,228);
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "div1"
+    "div2"
+    "div3"
+    ;
+}
+
+.contenedor_index2{
+    background-color: rgb(205,229,228);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.contenedor_index2 div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor_index2{
+    background-color: rgb(205,229,228);
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items:center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "div4"
+    "div5"
+    "div6"
+    ;
+}
+
+/* Conexión de las grillas con los contenidos */
+
+.uno-main{
+    grid-area: div1;
+    width: auto;
+    height: auto;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 10px;
+    color: rgb(218,4,128);
+    font-family: 'Patrick Hand', cursive;
+}
+
+.dos-main{
+    grid-area: div2;
+    width: auto;
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-right: 10px;
+}
+
+.tres-main{  
+    grid-area: div3;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+.cuatro-main{
+    grid-area: div4;
+    width: auto;
+    height: auto;
+    text-align:left;
+    font-size: 50px;
+    color: rgb(218,4,128);
+    font-family: 'Patrick Hand', cursive;
+    margin-left: 10px;
+}
+
+.cinco-main{
+    grid-area: div5;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-left: 10px;
+}
+
+.seis-main{
+    grid-area: div6;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+/* Main Historia */
+
+.contenedor_historia{
+    background-color: rgb(205,229,228);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px auto auto auto auto auto auto auto auto auto auto;
+    gap: 1rem;
+}
+
+.contenedor_historia div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor_historia{
+    background-color: rgb(205,229,228);
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "div1"
+    "div2"
+    "div3"
+    "div4"
+    "div5"
+    "div6"
+    "div7"
+    "div8"
+    "div9"
+    "div10"
+    "div11"
+    ;
+}
+
+/* Conexión entre las grillas y los contenidos de Historia */
+
+.uno-historia{
+    grid-area: div1;
+    width: auto;
+    height: auto;
+    text-align: right;
+    font-size: 50px;
+    margin-right: 10px;
+    color: rgb(218,4,128);
+    font-family: 'Patrick Hand', cursive;
+}
+
+.dos-historia{
+    grid-area: div2;
+    width: auto;
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-right: 10px;
+}
+
+.tres-historia{
+    grid-area: div3;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+.cuatro-historia{
+    grid-area: div4;
+    width: auto;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-left: 10px;
+}
+
+.cinco-historia{
+    grid-area: div5;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+.seis-historia{
+    grid-area: div6;
+    width: auto;
+    text-align: right;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-right: 10px;
+}
+
+.siete-historia{
+    grid-area: div7;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+.ocho-historia{
+    grid-area: div8;
+    width: auto;
+    text-align: left;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-left: 10px;
+}
+
+.nueve-historia{
+    grid-area: div9;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+.diez-historia{
+    grid-area: div10;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+.once-historia{
+    grid-area: div11;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+/* Main Sabores*/
+
+.contenedor_sabores{
+    background-color: rgb(205,229,228);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.contenedor_sabores div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor_sabores{
+    background-color: rgb(205,229,228);
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "div1 div2"
+    ;
+}
+.uno-sabores{
+    grid-area: div1;
+    width: auto;
+    height: auto;
+    margin: 30px;
+}
+
+.dos-sabores{
+    grid-area: div2;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+/* Main Ferias*/
+
+.contenedor_ferias{
+    background-color: rgb(205,229,228);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.contenedor_ferias div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor_ferias{
+    background-color: rgb(205,229,228);
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-areas: 
+    "div1 div2"
+    ;
+}
+.uno-ferias{
+    grid-area: div1;
+    width: auto;
+    height: auto;
+    margin: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(218,4,128);
+    font-family: 'Patrick Hand', cursive;
+}
+
+.dos-ferias{
+    grid-area: div2;
+    width: auto;
+    height: auto;
+    margin:30px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(218,4,128);
+    font-family: 'Patrick Hand', cursive;
+}
+
+/* Main Puntos de venta*/
+
+.contenedor_punto{
+    background-color: rgb(205,229,228);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.contenedor_sabores div iframe{
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+}
+
+.contenedor_punto{
+    background-color: rgb(205,229,228);
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "div1 div2"
+    "div3 div4"
+    ;
+}
+
+.uno-punto{
+    grid-area: div1;
+    width: auto;
+    text-align: left;
+    font-size: 100px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-right: 10px;
+}
+
+.dos-punto{
+    grid-area: div2;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+.tres-punto{
+    grid-area: div3;
+    width: auto;
+    text-align: left;
+    font-size: 100px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-right: 10px;
+}
+
+.cuatro-punto{
+    grid-area: div4;
+    width: auto;
+    height: auto;
+    margin:30px;
+}
+
+/* Main Contacto*/
+
+.contenedor_contacto{
+    background-color: rgb(205,229,228);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+}
+
+.contenedor_contacto div img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.contenedor_contacto{
+    background-color: rgb(205,229,228);
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: 
+    "div1 div4"
+    "div2 div4"
+    "div3 div4"
+    ;
+}
+.uno-contacto{
+    grid-area: div1;
+    width: auto;
+    height: auto;
+    margin: 30px;
+    text-align: center;
+    font-size: 50px;
+    color: rgb(218,4,128);
+    font-family: 'Patrick Hand', cursive;
+}
+
+.dos-contacto{
+    grid-area: div2;
+    width: auto;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-right: 10px;
+}
+
+.tres-contacto{
+    grid-area: div3;
+    width: auto;
+    text-align: center;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin-right: 10px;
+}
+
+.cuatro-contacto{
+    grid-area: div4;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    font-size: 25px;
+    font-family: 'Roboto Slab', serif;
+    color: rgb(0,0,0);
+    margin:30px;
+}
+
+/* Footer */
+
+.pie_pagina{
+    background-color: rgb(218,4,128);
+    width: 100%;
+    text-align: center;
+    font-family: 'Patrick Hand', cursive; 
+}
+
+.pie_caja{
+    background-color: rgb(218,4,128);
+    /* position:fixed; */
+    width: auto;
+    height: auto;
+    text-align: center;
+    font-weight: bold;
+}
+
+.Ig{
+    font-family: 'Patrick Hand', cursive;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.Derechos{
+    color: rgb(255,255,255);
+    font-size: 15px;
+    font-family: 'Roboto Slab', serif;
+    padding: 20px;
+}
+
+/* Media query desktop */
+
+@media screen and (min-width: 768px){
+
+    /* Header en desktop */
+    header{
+        flex-direction: row;
+    }
+
+    header nav ul{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 10px;
+    }
+
+    /* Main en desktop index */
+    
+    .contenedor_index1{
+        grid-template-rows: repeat(4, auto);
+    }
+    
+    .contenedor_index1{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "div3 div1"
+        "div3 div2"
+        ;
+    }
+    
+    .contenedor_index2{
+        grid-template-rows: repeat(4, auto);
+    }
+    
+    .contenedor_index2{ 
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "div4 div6"
+        "div5 div6"
+        ;
+    } 
+    
+    /* Main en desktop Historia */
+
+    .contenedor_historia{
+        grid-template-rows: repeat(11, 1fr);
+    }
+
+    .contenedor_historia{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(6, 1fr);
+        grid-template-areas: 
+        "div1 div1"
+        "div3 div2"
+        "div4 div5"
+        "div7 div6"
+        "div8 div9"
+        "div10 div11"
+        ;
+    }
+
+    .uno-historia{
+        width: auto;
+        height: 100px;
+    }
+
+    .dos-historia{
+        width: 300px;
+    }
+
+    .tres-historia{
+        margin:30px;
+    }
+    
+    .cuatro-historia{
+        width: 300px;
+        margin-left: 30px;
+    }
+    
+    .cinco-historia{
+        width: 300px;
+        height: 300px;
+    }
+    .seis-historia{
+        width: 300px;
+    }
+    
+    .siete-historia{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .ocho-historia{
+        width: 300px;
+        margin-left: 30px;
+    }
+    
+    .nueve-historia{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .diez-historia{
+        width: 300px;
+        height: 300px;
+    }
+    
+    .once-historia{
+        width: 300px;
+        height: 300px;
+    }
+    
+}
