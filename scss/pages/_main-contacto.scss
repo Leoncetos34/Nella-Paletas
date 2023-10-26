@@ -1,0 +1,75 @@
+// Main Contacto
+.contenedor_contacto {
+	@include grid;
+	padding: 10px;
+	height: auto;
+	width: auto;
+	text-align: center;
+	align-items: center;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 50px 150px 1fr 50px 50px 50px 50px 1fr;
+	grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6" "div7" "div8";
+	div {
+		img {
+			@include imagenes;
+		}
+	}
+}
+.uno-contacto {
+	grid-area: div1;
+	@include grid-img;
+	text-align: center;
+	font-size: 50px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.dos-contacto {
+	grid-area: div2;
+	width: auto;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+}
+.tres-contacto {
+	grid-area: div3;
+	@include grid-img;
+}
+.cuatro-contacto {
+	grid-area: div4;
+	width: auto;
+	height: auto;
+	margin: 30px;
+	text-align: center;
+	font-size: 50px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.cinco-contacto {
+	grid-area: div5;
+	width: auto;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+}
+.seis-contacto {
+	grid-area: div6;
+	width: auto;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+}
+.siete-contacto {
+	grid-area: div7;
+	width: auto;
+	text-align: center;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+}
+.ocho-contacto {
+	grid-area: div8;
+	@include grid-img;
+}

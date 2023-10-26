@@ -1,0 +1,81 @@
+// Historia
+.contenedor_historia {
+	background-color: nth($list: $colores, $n: 1);
+	@include grid;
+	background-color: nth($list: $colores, $n: 1);
+	align-items: center;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: auto;
+	grid-template-areas: "div2" "div3" "div4" "div5" "div6" "div7" "div8" "div9" "div10" "div11";
+	div {
+		img {
+			@include imagenes;
+		}
+	}
+	p {
+		&:nth-child(odd) {
+			background-color: nth($list: $colores, $n: 5);
+			border-radius: 5%;
+		}
+	}
+}
+.dos-historia {
+	grid-area: div2;
+	width: auto;
+	text-align: right;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+	margin-right: 10px;
+}
+.tres-historia {
+	grid-area: div3;
+	@include grid-img;
+}
+.cuatro-historia {
+	grid-area: div4;
+	width: auto;
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+	margin-left: 10px;
+}
+.cinco-historia {
+	grid-area: div5;
+	@include grid-img;
+}
+.seis-historia {
+	grid-area: div6;
+	width: auto;
+	text-align: right;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+	margin-right: 10px;
+}
+.siete-historia {
+	grid-area: div7;
+	@include grid-img;
+}
+.ocho-historia {
+	grid-area: div8;
+	width: auto;
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+	margin-left: 10px;
+}
+.nueve-historia {
+	grid-area: div9;
+	@include grid-img;
+}
+.diez-historia {
+	grid-area: div10;
+	@include grid-img;
+}
+.once-historia {
+	grid-area: div11;
+	@include grid-img;
+}

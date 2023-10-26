@@ -1,0 +1,122 @@
+// Main Sabores
+.contenedor_sabores {
+	padding-left: 60px;
+	@include grid;
+	height: auto;
+	width: auto;
+	text-align: center;
+	align-items: center;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(6, 1fr);
+	grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6";
+	div {
+		height: auto;
+		width: auto;
+		margin: 30px;
+		img {
+			@include imagenes;
+		}
+	}
+}
+.uno-sabores {
+	grid-area: div1;
+	position: relative;
+	@include grid-img;
+	text-align: center;
+	font-size: 50px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.uno-back {
+	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
+	color: nth($list: $colores, $n: 6);
+	@include back;
+	&:hover {
+		opacity: 1;
+	}
+}
+.dos-sabores {
+	grid-area: div2;
+	position: relative;
+	@include grid-img;
+	text-align: center;
+	font-size: 50px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.dos-back {
+	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
+	color: nth($list: $colores, $n: 6);
+	@include back;
+	&:hover {
+		opacity: 1;
+	}
+}
+.tres-sabores {
+	grid-area: div3;
+	position: relative;
+	@include grid-img;
+	text-align: center;
+	font-size: 50px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.tres-back {
+	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
+	color: nth($list: $colores, $n: 6);
+	@include back;
+	&:hover {
+		opacity: 1;
+	}
+}
+.cuatro-sabores {
+	grid-area: div4;
+	position: relative;
+	@include grid-img;
+	text-align: center;
+	font-size: 50px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.cuatro-back {
+	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
+	color: nth($list: $colores, $n: 6);
+	@include back;
+	&:hover {
+		opacity: 1;
+	}
+}
+.cinco-sabores {
+	grid-area: div5;
+	position: relative;
+	@include grid-img;
+	text-align: center;
+	font-size: 50px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.cinco-back {
+	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
+	color: nth($list: $colores, $n: 6);
+	@include back;
+	&:hover {
+		opacity: 1;
+	}
+}
+.seis-sabores {
+	grid-area: div6;
+	position: relative;
+	@include grid-img;
+	text-align: center;
+	font-size: 50px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.seis-back {
+	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
+	color: nth($list: $colores, $n: 6);
+	@include back;
+	&:hover {
+		opacity: 1;
+	}
+}

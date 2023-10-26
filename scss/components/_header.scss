@@ -1,0 +1,45 @@
+// Header
+header {
+	background-color: nth($list: $colores, $n: 2);
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	flex-direction: column;
+	nav {
+		ul {
+			text-align: center;
+			align-items: center;
+			li {
+				font-size: 30px;
+				display: grid;
+				font-weight: bold;
+				text-align: center;
+				align-items: center;
+				font-family: 'Patrick Hand', cursive;
+			}
+		}
+	}
+}
+a {
+	&:link {
+		color: nth($list: $colores, $n: 4);
+	}
+	&:visited {
+		color: nth($list: $colores, $n: 4);
+	}
+	&:hover {
+		color: rgb(127, 255, 0);
+		font-size: 35px;
+		text-shadow: 5px nth($list: $colores, $n: 4);
+		cursor: pointer;
+	}
+}
+.logo {
+	position: static;
+	left: 50%;
+	width: 120px;
+	height: 80px;
+}

@@ -1,0 +1,91 @@
+// Main index
+.contenedor_index1 {
+	@include grid;
+	background-color: nth($list: $colores, $n: 1);
+	height: auto;
+	width: auto;
+	text-align: center;
+	align-items: center;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-areas: "div1" "div2" "div3";
+	div {
+		img {
+			@include imagenes;
+		}
+	}
+	p {
+		&:nth-child(odd) {
+			background-color: nth($list: $colores, $n: 5);
+			border-radius: 5%;
+		}
+	}
+}
+.contenedor_index2 {
+	background-color: nth($list: $colores, $n: 1);
+	@include grid;
+	background-color: nth($list: $colores, $n: 1);
+	height: auto;
+	width: auto;
+	text-align: center;
+	align-items: center;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: repeat(1, 1fr);
+	grid-template-areas: "div4" "div5" "div6";
+	div {
+		img {
+			@include imagenes;
+		}
+	}
+	p {
+		&:nth-child(odd) {
+			background-color: nth($list: $colores, $n: 1);
+			border-radius: 5%;
+		}
+	}
+}
+.uno-main {
+	grid-area: div1;
+	width: auto;
+	height: auto;
+	text-align: right;
+	font-size: 50px;
+	margin-right: 10px;
+	color: rgb(218,4,128);
+	font-family: 'Patrick Hand', cursive;
+}
+.dos-main {
+	grid-area: div2;
+	width: auto;
+	text-align: right;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+	margin-right: 10px;
+}
+.tres-main {
+	grid-area: div3;
+	@include grid-img;
+}
+.cuatro-main {
+	grid-area: div4;
+	width: auto;
+	height: auto;
+	text-align: left;
+	font-size: 50px;
+	color: rgb(218,4,128);
+	font-family: 'Patrick Hand', cursive;
+	margin-left: 10px;
+}
+.cinco-main {
+	grid-area: div5;
+	text-align: left;
+	font-size: 25px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+	margin-left: 10px;
+}
+.seis-main {
+	grid-area: div6;
+	@include grid-img;
+}

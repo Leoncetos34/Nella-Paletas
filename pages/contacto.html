@@ -8,7 +8,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Caveat+Brush&family=Patrick+Hand&family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
     <!-- Link al css -->
-    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/main.css">
+    <meta name="description" content="Contáctate con Nella Paletas mediante correo y participa de un sorteo mensual.">
+    <meta name="keywords" content="NELLA PALETAS, SORTEO, MENSUAL, CONTACTO">
     <title>Contacto</title>
 </head>
 <body>
@@ -44,31 +46,49 @@
     <main>
         <section class="contenedor_contacto">
             <div class="uno-contacto">
-                <h2 class="sub_centro">Contacto</h2>
+                <p>¡Participa del sorteo!</p>
             </div>
             <div class="dos-contacto">
+                <p>
+                    Cada mes realizamos un sorteo de 4 paletas. Para participar debes etiquétanos en redes sociales junto con tu paleta favorita. Recuerda que tienes hasta el fin de mes para poder participar del sorteo y ser quien gane de 4 paletas a su elección.
+                </p>
+            </div>
+            <div class="tres-contacto">
+                <img src="../assets/sorteo.png" alt="sorteo">
+            </div>
+            <div class="cuatro-contacto">
+                <p> Contacto</p>
+            </div>
+            <div class="cinco-contacto">
                 <label for="Nombre">Ingrese su nombre</label> <br>
                 <input type="text" name="Nombre" id="nombre" placeholder="Leonardo Rojas">
             </div>
-            <div class="tres-contacto">
+            <div class="seis-contacto">
                 <label for="Correo">Ingrese su correo</label> <br>
                 <input type="email" name="Correo" placeholder="email@gmail.com" required>
             </div>
-            <div class="cuatro-contacto">
-                <label for="mensaje">Ingrese su consulta</label> <br>
-                <textarea name="Mensaje" id="Mensaje" cols="50" rows="15" placeholder="Consulta..."></textarea>
+            <div class="siete-contacto">
+                <label for="mensaje">Comenta tu sabor de paleta favorita</label> <br>
+                <input type="text" name="Fav_paleta" id="fav_plaeta" placeholder="Chocolate con almendras">
+            </div>
+            <div class="ocho-contacto">
+                <img src="../assets/contacto.png" alt="paleta_contacto">
             </div>
         </section>
     </main>
 
     <!-- Footer -->
     <footer>
-        <section class="pie_caja">
-            <a href="https://www.instagram.com/nellapaletas.pe/" target="_blank" class="Ig">Instagram</a>
-            <div class="Derechos">
-                © 2023 Nella Paletas.  Todos los derechos reservados.
-            </div>
-        </section>
+        <nav>
+            <ul>
+                <li><a href="https://wa.me/917431488" target="_blank" class="whatsapp_logo"> <img src="../assets/whatsapp.png" alt="red_logo" > (+51) 917 431 488 </a></li>
+                <li><a href="https://www.instagram.com/nellapaletas.pe/" target="blank" class="Ig"> <img src="../assets/instagram.png" alt="red_logo"> Instagram </a></li>
+                <li><a href="https://www.tiktok.com/@nellapaletas" target="blank" class="Tiktok"> <img src="../assets/tiktok.png" alt="red_logo"> Tik Tok </a></li>
+            </ul>
+        </nav>
+        <div class="footer">
+            © 2023 Nella Paletas.  Todos los derechos reservados
+        </div>
     </footer>
 </body>
 </html>

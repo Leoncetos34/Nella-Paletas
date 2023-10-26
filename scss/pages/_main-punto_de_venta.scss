@@ -1,0 +1,77 @@
+// Main Punto de venta
+.contenedor_punto {
+	background-color: nth($list: $colores, $n: 1);
+	@include grid;
+	padding: 10px;
+	background-color: nth($list: $colores, $n: 1);
+	height: auto;
+	width: auto;
+	text-align: center;
+	align-items: center;
+	grid-template-columns: repeat(1, 1fr);
+	grid-template-rows: 20px 100px 1fr 20px 100px 1fr;
+	grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6";
+	div {
+		iframe {
+			width: 270px;
+			height: 270px;
+			object-fit: cover;
+		}
+	}
+	p {
+		&:nth-child(odd) {
+			background-color: nth($list: $colores, $n: 5);
+			border-radius: 5%;
+		}
+	}
+}
+.uno-punto {
+	grid-area: div1;
+	@include grid-img;
+	text-align: left;
+	font-size: 30px;
+	padding: 15px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.dos-punto {
+	grid-area: div2;
+	height: auto;
+	width: 270px;
+	text-align: left;
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+	padding: 15px;
+}
+.tres-punto {
+	grid-area: div3;
+	width: 300px;
+	height: 300px;
+	padding-top: 15px;
+}
+.cuatro-punto {
+	grid-area: div4;
+	@include grid-img;
+	text-align: left;
+	font-size: 30px;
+	padding: 15px;
+	color: nth($list: $colores, $n: 2);
+	font-family: 'Patrick Hand', cursive;
+}
+.cinco-punto {
+	grid-area: div5;
+	height: auto;
+	width: 270px;
+	text-align: left;
+	font-size: 30px;
+	font-family: 'Roboto Slab', serif;
+	color: nth($list: $colores, $n: 6);
+	padding-left: 15px;
+}
+.seis-punto {
+	grid-area: div6;
+	width: 300px;
+	height: 300px;
+	padding-top: 15px;
+}

@@ -1,0 +1,43 @@
+// Footer
+footer {
+	background-color: nth($list: $colores, $n: 2);
+	width: auto;
+	height: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px;
+	flex-direction: column;
+	nav {
+		ul {
+			text-align: center;
+			align-items: center;
+			li {
+				color: nth($list: $colores, $n: 4);
+				font-size: 30px;
+				padding: 10px;
+				display: grid;
+				font-weight: bold;
+				text-align: center;
+				align-items: center;
+				font-family: 'Patrick Hand', cursive;
+				a {
+					img {
+						position: static;
+						left: 50%;
+						width: 20px;
+						height: 20px;
+					}
+				}
+			}
+		}
+	}
+}
+.footer {
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+	font-size: 20px;
+	color: nth($list: $colores, $n: 4);
+	font-family: 'Patrick Hand', cursive;
+}
