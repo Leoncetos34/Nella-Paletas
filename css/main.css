@@ -100,7 +100,7 @@ a:hover {
   border-radius: 6px;
 }
 .contenedor_index2 p:nth-child(odd) {
-  background-color: rgb(205, 229, 228);
+  background-color: rgba(127, 255, 0, 0.5);
   border-radius: 5%;
 }
 
@@ -265,7 +265,6 @@ a:hover {
 }
 
 .contenedor_sabores {
-  padding-left: 60px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
@@ -274,7 +273,8 @@ a:hover {
   width: auto;
   text-align: center;
   align-items: center;
-  grid-template-columns: repeat(3, 1fr);
+	margin-bottom: 35px;
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(6, 1fr);
   grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6";
 }
@@ -297,6 +297,7 @@ a:hover {
   height: auto;
   margin: 30px;
   text-align: center;
+  align-items:center;
   font-size: 50px;
   color: rgb(218, 4, 128);
   font-family: "Patrick Hand", cursive;
@@ -514,7 +515,8 @@ a:hover {
   width: auto;
   height: auto;
   margin: 30px;
-  text-align: center;
+  text-align: left;
+  align-items: center;
   font-size: 50px;
   color: rgb(218, 4, 128);
   font-family: "Patrick Hand", cursive;
@@ -536,7 +538,8 @@ a:hover {
   width: auto;
   height: auto;
   margin: 30px;
-  text-align: center;
+  text-align: left;
+  align-items: center;
   font-size: 50px;
   color: rgb(218, 4, 128);
   font-family: "Patrick Hand", cursive;
@@ -555,12 +558,12 @@ a:hover {
   text-align: center;
   align-items: center;
   grid-template-columns: repeat(1, 1fr);
-  grid-template-rows: 20px 100px 1fr 20px 100px 1fr;
+  grid-template-rows: 15px 100px 1fr 15px 100px 1fr;
   grid-template-areas: "div1" "div2" "div3" "div4" "div5" "div6";
 }
 .contenedor_punto div iframe {
-  width: 270px;
-  height: 270px;
+  width: 250px;
+  height: 250px;
   object-fit: cover;
 }
 .contenedor_punto p:nth-child(odd) {
@@ -572,10 +575,9 @@ a:hover {
   grid-area: div1;
   width: auto;
   height: auto;
-  margin: 30px;
-  text-align: left;
+  text-align: center;
+	align-items: center;
   font-size: 30px;
-  padding: 15px;
   color: rgb(218, 4, 128);
   font-family: "Patrick Hand", cursive;
 }
@@ -583,18 +585,18 @@ a:hover {
 .dos-punto {
   grid-area: div2;
   height: auto;
-  width: 270px;
-  text-align: left;
+  width: auto;
+  text-align: center;
+  align-items: center;
   font-size: 30px;
   font-family: "Roboto Slab", serif;
   color: rgb(0, 0, 0);
-  padding: 15px;
 }
 
 .tres-punto {
   grid-area: div3;
-  width: 300px;
-  height: 300px;
+  width: auto;
+  height: auto;
   padding-top: 15px;
 }
 
@@ -602,10 +604,9 @@ a:hover {
   grid-area: div4;
   width: auto;
   height: auto;
-  margin: 30px;
-  text-align: left;
+  text-align: center;
+	align-items: center;
   font-size: 30px;
-  padding: 15px;
   color: rgb(218, 4, 128);
   font-family: "Patrick Hand", cursive;
 }
@@ -613,18 +614,18 @@ a:hover {
 .cinco-punto {
   grid-area: div5;
   height: auto;
-  width: 270px;
-  text-align: left;
+  width: auto;
+  text-align: center;
+	align-items: center;
   font-size: 30px;
   font-family: "Roboto Slab", serif;
   color: rgb(0, 0, 0);
-  padding-left: 15px;
 }
 
 .seis-punto {
   grid-area: div6;
-  width: 300px;
-  height: 300px;
+  width: auto;
+  height: auto;
   padding-top: 15px;
 }
 
@@ -761,7 +762,74 @@ footer nav ul li a img {
   font-family: "Patrick Hand", cursive;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 531px) and (max-width: 768px) {
+  
+  .contenedor_sabores {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-template-areas: "div1 div2" "div3 div4" "div5 div6";
+  }
+  .contenedor_sabores div {
+    height: 300px;
+    width: auto;
+    object-fit: cover;
+  }
+  .contenedor_punto {
+    background-color: rgb(205, 229, 228);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    gap: 1rem;
+    background-color: rgb(205, 229, 228);
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 15px 100px 1fr;
+    grid-template-areas: "div1 div4" "div2 div5" "div3 div6";
+  }
+  .contenedor_punto div iframe {
+    width: 250px;
+    height: 200px;
+  }
+  .uno-punto {
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .dos-punto {
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .tres-punto {
+    height: auto;
+    width: auto;
+    align-items: center;
+  }
+  .cuatro-punto {
+    height: auto;
+    width: auto;
+    text-align: center;
+    align-items: center;
+    font-size: 30px;
+  }
+  .cinco-punto {
+    height: auto;
+    width: auto;
+    font-size: 30px;
+    text-align: center;
+    align-items: center;
+  }
+  .seis-punto {
+    height: auto;
+    width: auto;
+    align-items: center;
+  }
+}
+
+@media screen and (min-width: 769px) {
   header {
     flex-direction: row;
     height: 100px;
@@ -880,15 +948,13 @@ footer nav ul li a img {
     grid-template-rows: auto;
     gap: 1rem;
     background-color: rgb(205, 229, 228);
-    height: auto;
-    width: auto;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 100px 200px 1fr;
     grid-template-areas: "div1 div4" "div2 div5" "div3 div6";
   }
   .contenedor_punto div iframe {
-    width: 500px;
-    height: 500px;
+    width: 300px;
+    height: 300px;
   }
   .uno-punto {
     height: auto;
@@ -896,13 +962,11 @@ footer nav ul li a img {
     text-align: center;
     align-items: center;
     font-size: 50px;
-    padding: 15px;
   }
   .dos-punto {
     height: auto;
     width: auto;
-    font-size: 55px;
-    padding: 15px;
+    font-size: 50px;
     text-align: center;
     align-items: center;
   }
@@ -918,13 +982,13 @@ footer nav ul li a img {
     text-align: center;
     align-items: center;
     font-size: 50px;
-    padding: 15px;
   }
   .cinco-punto {
     height: auto;
     width: auto;
-    font-size: 55px;
-    padding-left: 15px;
+    font-size: 50px;
+    text-align: center;
+    align-items: center;
   }
   .seis-punto {
     height: auto;
