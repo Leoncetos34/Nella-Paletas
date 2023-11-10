@@ -18,17 +18,14 @@
 .uno-contacto {
 	grid-area: div1;
 	@include grid-img;
-	text-align: center;
-	font-size: 50px;
+	@include grid-contacto;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .dos-contacto {
 	grid-area: div2;
-	width: auto;
-	text-align: center;
-	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
+	@include grid-contacto;
+	font-family: nth($list: $fuente, $n: 2);
 	color: nth($list: $colores, $n: 6);
 }
 .tres-contacto {
@@ -37,36 +34,27 @@
 }
 .cuatro-contacto {
 	grid-area: div4;
-	width: auto;
-	height: auto;
-	margin: 30px;
-	text-align: center;
-	font-size: 50px;
+	@include grid-img;
+	@include grid-contacto;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .cinco-contacto {
 	grid-area: div5;
-	width: auto;
-	text-align: center;
-	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
+	@include grid-contacto;
+	font-family: nth($list: $fuente, $n: 2);
 	color: nth($list: $colores, $n: 6);
 }
 .seis-contacto {
 	grid-area: div6;
-	width: auto;
-	text-align: center;
-	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
+	@include grid-contacto;
+	font-family: nth($list: $fuente, $n: 2);
 	color: nth($list: $colores, $n: 6);
 }
 .siete-contacto {
 	grid-area: div7;
-	width: auto;
-	text-align: center;
-	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
+	@include grid-contacto;
+	font-family: nth($list: $fuente, $n: 2);
 	color: nth($list: $colores, $n: 6);
 }
 .ocho-contacto {

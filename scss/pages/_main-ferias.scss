@@ -7,6 +7,7 @@
 	width: auto;
 	text-align: center;
 	align-items: center;
+	padding: 25px;
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: repeat(1, 1fr);
 	grid-template-areas: "div1" "div2" "div3" "div4";
@@ -18,33 +19,25 @@
 }
 .uno-ferias {
 	grid-area: div1;
-	@include grid-img;
-	text-align: center;
-	font-size: 50px;
+	@include grid-ferias;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .dos-ferias {
 	grid-area: div2;
-	@include grid-img;
-	text-align: center;
-	font-size: 50px;
+	@include grid-ferias;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .tres-ferias {
 	grid-area: div3;
-	@include grid-img;
-	text-align: center;
-	font-size: 50px;
+	@include grid-ferias;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .cuatro-ferias {
 	grid-area: div4;
-	@include grid-img;
-	text-align: center;
-	font-size: 50px;
+	@include grid-ferias;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }

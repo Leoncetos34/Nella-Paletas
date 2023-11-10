@@ -52,14 +52,14 @@
 	font-size: 50px;
 	margin-right: 10px;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .dos-main {
 	grid-area: div2;
 	width: auto;
 	text-align: right;
 	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
+	font-family: nth($list: $fuente, $n: 2);
 	color: nth($list: $colores, $n: 6);
 	margin-right: 10px;
 }
@@ -74,14 +74,14 @@
 	text-align: left;
 	font-size: 50px;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 	margin-left: 10px;
 }
 .cinco-main {
 	grid-area: div5;
 	text-align: left;
 	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
+	font-family: nth($list: $fuente, $n: 2);
 	color: nth($list: $colores, $n: 6);
 	margin-left: 10px;
 }

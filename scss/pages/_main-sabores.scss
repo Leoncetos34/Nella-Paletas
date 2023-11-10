@@ -22,11 +22,10 @@
 	grid-area: div1;
 	position: relative;
 	@include grid-img;
-	align-items: center;
 	text-align: center;
 	font-size: 50px;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .uno-back {
 	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
@@ -43,7 +42,7 @@
 	text-align: center;
 	font-size: 50px;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .dos-back {
 	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
@@ -60,7 +59,7 @@
 	text-align: center;
 	font-size: 50px;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .tres-back {
 	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
@@ -77,7 +76,7 @@
 	text-align: center;
 	font-size: 50px;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .cuatro-back {
 	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
@@ -94,7 +93,7 @@
 	text-align: center;
 	font-size: 50px;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .cinco-back {
 	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));
@@ -111,7 +110,7 @@
 	text-align: center;
 	font-size: 50px;
 	color: nth($list: $colores, $n: 2);
-	font-family: 'Patrick Hand', cursive;
+	font-family: nth($list: $fuente, $n: 1);
 }
 .seis-back {
 	background-image: linear-gradient(nth($list: $colores, $n: 5), nth($list: $colores, $n: 7));

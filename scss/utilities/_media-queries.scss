@@ -8,62 +8,66 @@
 		}
 		grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(3, 1fr);
-    grid-template-areas: "div1 div2" "div3 div4" "div5 div6";
+    grid-template-areas: "div1q div2" "div3 div4" "div5 div6";
 	}
   }
-  .contenedor_punto {
-	background-color: $background-color_1;
+  .contenedor_sabores {
+	background-color: nth($list: $colores , $n: 1);
 	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: auto;
 	gap: 1rem;
-	background-color: $background-color_1;
+	background-color: nth($list: $colores , $n: 1);
 	grid-template-columns: repeat(2, 1fr);
-	grid-template-rows: 15px 100px 1fr;
+	grid-template-rows: 400px 400px 400px;
 	grid-template-areas: "div1 div4" "div2 div5" "div3 div6";
 	div {
 		iframe {
-			width: 250px;
-			height: 200px;
+			width: 100%;
+			height: 100%;
 		}
 	}
 }
-.uno-punto {
-	height: auto;
-	width: auto;
-	text-align: center;
-	align-items: center;
-	font-size: 30px;
-}
-.dos-punto {
+.uno-sabores {
 	height: auto;
 	width: auto;
 	font-size: 30px;
 	text-align: center;
 	align-items: center;
 }
-.tres-punto {
-	height: auto;
-	width: auto;
-	align-items: center;
-}
-.cuatro-punto {
-	height: auto;
-	width: auto;
-	text-align: center;
-	align-items: center;
-	font-size: 30px;
-}
-.cinco-punto {
+.dos-sabores {
 	height: auto;
 	width: auto;
 	font-size: 30px;
 	text-align: center;
 	align-items: center;
 }
-.seis-punto {
+.tres-sabores {
 	height: auto;
 	width: auto;
+	font-size: 30px;
+	text-align: center;
+	align-items: center;
+}
+.cuatro-sabores {
+	height: auto;
+	width: auto;
+	font-size: 30px;
+	text-align: center;
+	align-items: center;
+}
+.cinco-sabores {
+	height: auto;
+	width: auto;
+	font-size: 30px;
+	text-align: center;
+	align-items: center;
+}
+.seis-sabores {
+	height: auto;
+	width: auto;
+	font-size: 30px;
+	text-align: center;
 	align-items: center;
 }
 @media screen and (min-width: 769px) {

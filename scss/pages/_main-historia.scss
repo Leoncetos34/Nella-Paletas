@@ -7,6 +7,7 @@
 	grid-template-columns: repeat(1, 1fr);
 	grid-template-rows: auto;
 	grid-template-areas: "div2" "div3" "div4" "div5" "div6" "div7" "div8" "div9" "div10" "div11";
+	margin-top: 25px;
 	div {
 		img {
 			@include imagenes;
@@ -21,12 +22,11 @@
 }
 .dos-historia {
 	grid-area: div2;
-	width: auto;
+	@include grid-historia;
 	text-align: right;
-	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
-	color: nth($list: $colores, $n: 6);
 	margin-right: 10px;
+	font-family: nth($list: $fuente, $n: 2);
+	color: nth($list: $colores, $n: 6);
 }
 .tres-historia {
 	grid-area: div3;
@@ -34,12 +34,11 @@
 }
 .cuatro-historia {
 	grid-area: div4;
-	width: auto;
+	@include grid-historia;
 	text-align: left;
-	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
-	color: nth($list: $colores, $n: 6);
 	margin-left: 10px;
+	font-family: nth($list: $fuente, $n: 2);
+	color: nth($list: $colores, $n: 6);
 }
 .cinco-historia {
 	grid-area: div5;
@@ -47,12 +46,11 @@
 }
 .seis-historia {
 	grid-area: div6;
-	width: auto;
+	@include grid-historia;
 	text-align: right;
-	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
-	color: nth($list: $colores, $n: 6);
 	margin-right: 10px;
+	font-family: nth($list: $fuente, $n: 2);
+	color: nth($list: $colores, $n: 6);
 }
 .siete-historia {
 	grid-area: div7;
@@ -60,12 +58,11 @@
 }
 .ocho-historia {
 	grid-area: div8;
-	width: auto;
+	@include grid-historia;
 	text-align: left;
-	font-size: 25px;
-	font-family: 'Roboto Slab', serif;
-	color: nth($list: $colores, $n: 6);
 	margin-left: 10px;
+	font-family: nth($list: $fuente, $n: 2);
+	color: nth($list: $colores, $n: 6);
 }
 .nueve-historia {
 	grid-area: div9;
